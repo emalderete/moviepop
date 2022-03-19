@@ -3,7 +3,7 @@ import '../App.css';
 
 const Home = () => {
     return (
-        <div>
+        <div className='mainContainer'>
             <div className='mainIcon'>
                 <img className='mainIconSvg' src={cinema}></img>
             </div>
