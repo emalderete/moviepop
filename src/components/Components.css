@@ -99,9 +99,9 @@ hr {
 }
 
 .loginLabel {
-    margin-left: 1rem;
-    transform: translateY(2rem);
     color: #b6b6b6;
+    transition: 200ms;
+    pointer-events: none;
 }
 
 .loginInput {
@@ -110,9 +110,25 @@ hr {
     height: 2.3rem;
     border: none;
     background-color: #29435c;
+    transition: 200ms;
     outline: none;
+    font-family: 'Nunito', sans-serif;
 }
 
-.loginInputFocus {
-    transform: translateY(0rem);
+.loginSubmit {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(240, 248, 255, 0);
+    color: aliceblue;
+    width: 100%;
+    margin: 1.5rem 0.1rem;
+    font-weight: 800;
+    border-color: orange;
+    border-radius: 0.5rem;
+    height: 2.2rem;
+    transition: 200ms;
+}
+
+.loginSubmit:hover {
+    background-color: orange;
+    color: black;
 }

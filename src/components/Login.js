@@ -1,13 +1,6 @@
 import './Components.css';
 
 const Login = () => {
-
-    let label = document.querySelector('.loguinLabel');
-
-    function inputFocus() {
-        label.classList.toggle('loginInputFocus');
-    }
-
     return (
         <div>
             <h1 className='loginTitle'>Iniciar Sesión</h1>
@@ -20,6 +13,7 @@ const Login = () => {
                     <label className='loginLabel' name="password">Contraseña</label>
                     <input className='loginInput' type="password" name="password"></input>
                 </div>
+                <button className='loginSubmit' type='submit'>Ingresar</button>
             </form>
         </div>
     );
