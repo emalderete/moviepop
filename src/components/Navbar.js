@@ -4,8 +4,8 @@ import './Components.css';
 const Navbar = () => {
     return (
         <div>
-            <ul className="navigation ">
-                <li className="color">
+            <ul className="navigation">
+                <li>
                     <NavLink className={({isActive}) => isActive ? "active" : "inactive"} to="/"><i className="icons fa-solid fa-house-chimney"></i></NavLink>
                 </li>
                 <li>

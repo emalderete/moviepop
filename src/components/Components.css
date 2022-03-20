@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+/* ------ Estilos del Navbar ------*/
+
 .navigation {
     list-style: none;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: 0.8rem;
 }
 
@@ -17,4 +21,46 @@
 
 .inactive {
     color: aliceblue;
+}
+
+
+/* ------ Searching field ------ */
+
+.formSearch {
+    margin: 1rem 3rem 1rem 2rem;
+}
+
+.search {
+    width: 100%;
+    border-radius: 0.7rem;
+    height: 2.3rem;
+    border: none;
+    background-color: #29435c;
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    outline: none;
+}
+
+
+/* ----- Movies Container ------*/
+
+hr {
+    margin: 1rem 1.6rem;
+    border-color: #314f6b;
+}
+
+.movieTitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+    color: aliceblue;
+    margin: 1rem 4rem;
+}
+
+.movieContainer {
+    display: flex;
+}
+
+.movieSlab {
+    border: solid;
+    border-color: aliceblue;
 }

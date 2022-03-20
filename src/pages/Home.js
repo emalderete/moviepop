@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className='mainContainer'>
             <div className='mainIcon'>
-                <img className='mainIconSvg' src={cinema}></img>
+                <img className='mainIconSvg' src={cinema} alt=""></img>
             </div>
             <h1 className='mainIconTitle'>MoviePop!</h1>
         </div>
