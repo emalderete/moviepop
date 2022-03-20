@@ -8,16 +8,24 @@ const MoviesContainer = () => {
             <hr/>
             <div className='movieContainer'>
                 <div className='movieSlab'>
-                    <img src={cinema} alt=''></img>
+                    <div>
+                        <img className='img' src={cinema} alt=''></img>
+                    </div>
                 </div>
                 <div className='movieSlab'>
-                    <img src={cinema} alt=''></img>
+                    <div>
+                        <img className='img' src={cinema} alt=''></img>
+                    </div>
                 </div>
                 <div className='movieSlab'>
-                    <img src={cinema} alt=''></img>
+                    <div>
+                        <img className='img' src={cinema} alt=''></img>
+                    </div>
                 </div>
                 <div className='movieSlab'>
-                    <img src={cinema} alt=''></img>
+                    <div>
+                        <img className='img' src={cinema} alt=''></img>
+                    </div>
                 </div>
             </div>
         </div>

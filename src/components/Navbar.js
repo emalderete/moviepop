@@ -11,6 +11,9 @@ const Navbar = () => {
                 <li>
                     <NavLink className={({isActive}) => isActive ? "active" : "inactive"} to="/movies"><i className="icons fa-solid fa-magnifying-glass"></i></NavLink>
                 </li>
+                <li>
+                    <NavLink className={({isActive}) => isActive ? "active" : "inactive"} to="/user"><i className="icons fa-solid fa-user"></i></NavLink>
+                </li>
             </ul>
         </div>
     );
