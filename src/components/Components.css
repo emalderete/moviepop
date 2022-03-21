@@ -132,3 +132,23 @@ hr {
     background-color: orange;
     color: black;
 }
+
+
+/* ------ Register ------*/
+
+.registerText {
+    margin: 0 2.5rem;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+.registerLink {
+    color: orange;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+.registerLink:hover {
+    color: #fce1af;
+}
