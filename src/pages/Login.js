@@ -1,9 +1,11 @@
 import '../components/Components.css';
+import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
         <div>
+            <Navbar></Navbar>
             <h1 className='loginTitle'>Iniciar Sesión</h1>
             <form className='loginForm'>
                 <div className="loginContainer">

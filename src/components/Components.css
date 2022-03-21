@@ -9,14 +9,14 @@
     margin-right: 0.8rem;
 }
 
-.active {
-    color: orange;
-}
-
 .icons {
     margin: 1rem 0.6rem;
     font-size: 130%;
     transition: 300ms;
+}
+
+.active {
+    color: orange;
 }
 
 .inactive {
@@ -63,10 +63,17 @@ hr {
 }
 
 .movieSlab {
-    border: solid;
-    border-color: aliceblue;
     width: 9rem;
     margin: 0.7rem;
+}
+
+.movieSlabTitle {
+    font-size: 80%;
+    font-family: 'Nunito', sans-serif;
+    color: aliceblue;
+    text-align: end;
+    text-decoration: none;
+    margin: 0;
 }
 
 .img {
@@ -151,4 +158,67 @@ hr {
 
 .registerLink:hover {
     color: #fce1af;
+}
+
+
+/* ------ BackArrow ------ */
+
+.fa-arrow-left {
+    color: aliceblue;
+    font-size: 150%;
+    margin-top: 2rem;
+}
+
+
+/* ------ Details ------*/
+
+.detailsImgMainContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.detailsImgContainer {
+    width: 90%;
+    display: flex;
+    border: solid aliceblue;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.detailsImg {
+    width: 100%;
+}
+
+.starScore {
+    position: absolute;
+    color: orange;
+    margin-top: -1rem;
+    padding: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.detailsTitle {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 120%;
+}
+
+.detailsList {
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    list-style: none;
+    font-size: 90%;
+    margin: 0;
+}
+
+.detailsText {
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 90%;
+    margin: 1rem 2rem;
 }
