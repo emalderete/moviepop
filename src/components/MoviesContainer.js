@@ -1,37 +1,44 @@
 import { useEffect, useState } from 'react';
 import './Components.css';
-import cinema from '../img/cinema.svg';
 import { Link } from 'react-router-dom';
+
+const tvMaze = 'http://api.tvmaze.com/search/shows?q=star%20wars';
 
 const MoviesContainer = () => {
 
-    const tvMaze = 'http://api.tvmaze.com/search/shows?q=star%20wars';
+    const [movies, setMovies] = useState(0);
 
-    const fetchAPI = async () => {
-        const response = await fetch(tvMaze);
-        
-    }
+        useEffect( async ()=>{
+                const response = await fetch(tvMaze);
+                if (response.status === 200) {
+                    const data = await response.json();
+                    setMovies(...data);
+                }
 
-    useEffect(()=>{
-        fetchAPI();
-    });
+                
+        }, []);
 
-    return (
+        const mappingData = movies.map((movie, index)=>(
+            <Link to='/details' key={index}>
+                <div>
+                    <img className='img' src={movie.show.image.medium} alt=''></img>
+                </div>
+                <h4 className='movieSlabTitle'>{movie.show.name}</h4>
+            </Link>
+            ));
+
+    return(
         <div>
             <h6 className='movieTitle'>Películas</h6>
             <hr/>
             <div className='movieContainer'>
                 <div className='movieSlab'>
-                    <Link to='/details'>
-                        <div>
-                            <img className='img' src={cinema} alt=''></img>
-                        </div>
-                        <h4 className='movieSlabTitle'>Título</h4>
-                    </Link>
+                    {mappingData}
                 </div>
             </div>
         </div>
     );
+        
 };
 
 export default MoviesContainer;
