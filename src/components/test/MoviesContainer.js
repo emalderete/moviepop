@@ -20,13 +20,12 @@ const MoviesContainer = () => {
 
     return(
         <div>
-            {/*<h6 className='movieTitle'>Películas</h6>
+            <h6 className='movieTitle'>Películas</h6>
             <hr/>
             <div className='movieContainer'>
                 <div className='movieSlab'>
                     {movies.map((movie, index)=>{
                         return(
-                            <h1>Hola mundo</h1>
                             <Link to='/details' key={index}>
                                 <div>
                                     <img className='img' src={movie.show.image.medium} alt=''></img>
@@ -36,7 +35,7 @@ const MoviesContainer = () => {
                         )
                     })}
                 </div>
-                </div>*/}
+                </div>
         </div>
     );
         
