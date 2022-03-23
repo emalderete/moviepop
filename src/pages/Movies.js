@@ -1,5 +1,5 @@
 import SearchingField from "../components/SearchingField";
-import MoviesContainer from "../components/MoviesContainer";
+import MoviesContainer from "../components/test/MoviesContainer";
 import Navbar from "../components/Navbar";
 
 const Movies = () => {
